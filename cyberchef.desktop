@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=CyberChef
+Comment=A Cyber Swiss Army Knife
+Exec=firefox /usr/share/cyberchef/cyberchef.html
+Icon=cyberchef
+Terminal=false
+Categories=Utility;
