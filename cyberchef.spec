@@ -1,11 +1,11 @@
 Name:           cyberchef
-Version:        9.13.1
+Version:        9.21.0
 Release:        1%{?dist}
 Summary:        The Cyber Swiss Army Knife
 
 License:        ASL 2.0
 URL:            https://github.com/gchq/CyberChef
-Source0:        https://github.com/gchq/CyberChef/releases/download/v%{version}/CyberChef_v%{version}.zip
+Source0:        https://gchq.github.io/CyberChef/CyberChef_v%{version}.zip
 Source1:        https://raw.githubusercontent.com/gchq/CyberChef/master/LICENSE
 Source2:        https://raw.githubusercontent.com/gchq/CyberChef/master/README.md
 Source3:        https://raw.githubusercontent.com/gchq/CyberChef/master/CHANGELOG.md
@@ -58,5 +58,8 @@ desktop-file-install --dir=${RPM_BUILD_ROOT}%{_datadir}/applications %{SOURCE4}
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
+* Thu Nov 19 2020 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 9.21.0-1
+- Update to 9.21.0
+
 * Sat Feb 22 2020 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 9.13.1-1
 - Initial build
