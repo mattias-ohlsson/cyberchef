@@ -1,6 +1,6 @@
 Name:           cyberchef
-Version:        9.21.0
-Release:        2%{?dist}
+Version:        9.32.3
+Release:        1%{?dist}
 Summary:        The Cyber Swiss Army Knife
 
 License:        ASL 2.0
@@ -49,15 +49,21 @@ desktop-file-install --dir=${RPM_BUILD_ROOT}%{_datadir}/applications %{SOURCE4}
 %{_datadir}/%{name}/*.html
 %{_datadir}/%{name}/assets/main.css
 %{_datadir}/%{name}/assets/main.js
+%{_datadir}/%{name}/assets/*.txt
 %{_datadir}/%{name}/assets/fonts/*.fnt
 %{_datadir}/%{name}/assets/fonts/*.png
 %{_datadir}/%{name}/assets/tesseract/lang-data/eng.traineddata.gz
 %{_datadir}/%{name}/assets/tesseract/*.js
+%{_datadir}/%{name}/assets/tesseract/*.txt
+%{_datadir}/%{name}/assets/forge/*.js
 %{_datadir}/%{name}/images/*.png
 %{_datadir}/icons/hicolor/128x128/apps/%{name}.png
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
+* Mon Sep 20 2021 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 9.32.3-1
+- Update to 9.32.3
+
 * Fri Dec 04 2020 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 9.21.0-2
 - Change source URL
 
